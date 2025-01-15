@@ -93,10 +93,14 @@ body {
 /* News Feed Styling */
 .news-feed {
   background-color: #ffffff; /* White feed background */
-  padding: 20px;
+  padding: 120px;
+  padding-top: 170px;
   border-radius: 8px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   margin-bottom: 20px;
+  margin-top: 150px;
+  position: relative;
+  top: 0;
 }
 
 .news-item {
