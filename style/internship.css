@@ -35,6 +35,11 @@ body {
     margin-bottom: 32px; /* Equivalent to mb-8 */
 }
 
+.h1 {
+  font-family: DejaVu Sans;
+  font-size: 32px;
+}
+
 
 .header {
     display: flex;
