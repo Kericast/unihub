@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' type='text/css' href='/Testing/elearning.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Resource Selector</title>
+   
+</head>
+<body>
+
+
+<div class="main-container">
+    <!-- Form Section -->
+    <div class="form-container">
+        <h2>Engineering Resource Selector</h2>
+
+        <!-- Step 1: Year Selection -->
+        <div id="step1">
+            <label for="year">Choose Year of Study</label>
+            <select id="year">
+                <option value="">Select Year</option>
+                <option value="1">1st Year</option>
+                <option value="2">2nd Year</option>
+                <option value="3">3rd Year</option>
+                <option value="4">4th Year</option>
+            </select>
+            <button id="nextToBranch" onclick="goToStep(2)" disabled>Next</button>
+        </div>
+
+        <!-- Step 2: Branch Selection -->
+        <div id="step2" class="hidden">
+            <label for="branch">Choose Branch</label>
+            <select id="branch">
+                <option value="">Select Branch</option>
+                <option value="CMPN">Computer Engineering</option>
+                <option value="IT">Information Technology</option>
+                <option value="ECS">Electronics and Computer Science</option>
+                <option value="ELEC">Electrical</option>
+                <option value="EE">Electronics Engineering</option>
+                <option value="EXTC">Electronics and Telecommunication</option>
+            </select>
+            <button id="nextToSubject" onclick="goToStep(3)" disabled>Next</button>
+        </div>
+
+        <!-- Step 3: Subject Selection -->
+        <div id="step3" class="hidden">
+            <label for="subject">Choose Subject</label>
+            <select id="subject">
+                <option value="">Select Subject</option>
+                <option value="subject1">Subject 1</option>
+                <option value="subject2">Subject 2</option>
+                <option value="subject3">Subject 3</option>
+                <option value="subject4">Subject 4</option>
+                <option value="subject5">Subject 5</option>
+            </select>
+            <button id="nextToResources" onclick="goToStep(4)" disabled>Next</button>
+        </div>
+
+        <!-- Step 4: Resource Selection -->
+        <div id="step4" class="hidden">
+            <label>Select Resources</label>
+            <div class="resource-options">
+                <input type="checkbox" id="ebooks"> <label for="ebooks">Ebooks</label><br>
+                <input type="checkbox" id="pyqs"> <label for="pyqs">PYQs</label><br>
+            </div>
+            <button onclick="showResources()">Show Resources</button>
+        </div>
+    </div>
+
+    <!-- PDF Viewer Section -->
+    <div class="iframe-container">
+        <h3>Resource Viewer</h3>
+        <iframe id="pdfViewer" src=""></iframe>
+    </div>
+</div>
+<script src="/Testing/elearning.js"></script>
+
+</body>
+</html>
