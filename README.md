@@ -1,6 +1,4 @@
-Here's the updated **README.md** with the **Upcoming Ideas** section:  
 
-```markdown
 # Institutional Forum Page
 
 This project is a professional platform designed to promote open dialogue and collaboration within an institution. It features user-friendly navigation, categorized discussions, and a secure, inclusive environment for members to share ideas and insights.
@@ -18,7 +16,7 @@ This project is a professional platform designed to promote open dialogue and co
    ```bash
    git clone https://github.com/Veeraj71/Institutional_Forum_Page.git
    cd Institutional_Forum_Page
-   ```
+   
 2. **Open in Browser**:
    Simply open the `index.html` file in your preferred web browser to view the forum.
 
