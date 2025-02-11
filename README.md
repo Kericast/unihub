@@ -65,6 +65,4 @@ This project is licensed under the Apache-2.0 License. See the [LICENSE](LICENSE
 ## Contact
 
 For any questions or suggestions, please open an issue in this repository.
-```
 
-This update highlights the **upcoming features** clearly, making it exciting for contributors and users. Let me know if you’d like any further refinements! 🚀😃
