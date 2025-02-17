@@ -174,4 +174,4 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
-});
+}); 
