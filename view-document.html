@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/documents.css">
+    <title>View Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.4.120/build/pdf.min.js"></script>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Company Logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="documents.html">Documents</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="document-viewer-container">
+        <div class="document-info" id="documentInfo">
+            <!-- Document info will be displayed here -->
+        </div>
+        
+        <div class="pdf-controls">
+            <button id="prevPage" class="control-btn">Previous</button>
+            <span id="pageInfo">Page 1 of 1</span>
+            <button id="nextPage" class="control-btn">Next</button>
+        </div>
+        
+        <div class="pdf-container">
+            <canvas id="pdfViewer"></canvas>
+        </div>
+        
+        <div class="document-actions">
+            <a href="documents.html" class="secondary-btn">Back to Documents</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Institutional Forum. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/documentModel.js"></script>
+    <script src="js/viewDocument.js"></script>
+</body>
+</html>
