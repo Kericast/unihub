@@ -41,6 +41,13 @@
       opacity: 1;
     }
   }
+  .body{
+  background-image:url(images\yellow.jpg) no-repeat !important; 
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    
+  }
   
   /* Container Styles */
   
@@ -52,20 +59,21 @@
     grid-gap: 20px;
     margin: 0 auto;
     width: 80%;
+    
   }
   
   /* Sign In Section Styles */
   
   .sign-in-section {
-    background-color: #e6f0ff;
-    display: flex;
+    background-image: url('/images/yellow.jpg'); /* Replace with any background image URL */
+    background-size: cover;
+    background-position: center;
+    background-position: center;
     align-items: center;
     justify-content: center;
     height: 100vh;
     width: 203vh;
-    background-color: #e6f0ff;
     display: flex;
-    align-items: center;
     justify-content: center;
     height: 100vh;
     width: 100vw;
@@ -73,19 +81,23 @@
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom:0;
+    
   }
   
   .sign-in-box {
     max-width: 400px;
     width: 100%;
     padding: 2rem;
-    background-color: #fff;
     border-radius: 16px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background: transparent;
+    backdrop-filter: blur(50px);
+    
+
   }
   
   .title {
@@ -95,6 +107,7 @@
     color: #0a1931;
     animation: textFadeIn 1s ease-in-out forwards;
     animation-delay: 0.2s;
+    
   }
   
   .subtitle {
@@ -104,10 +117,12 @@
     color: #6b7280;
     animation: textFadeIn 1s ease-in-out forwards;
     animation-delay: 0.4s;
+    
   }
   
   .form {
     margin-top: 1rem;
+  
   }
   
   .input-group {
@@ -122,6 +137,9 @@
     border-radius: 8px;
     border: none;
     font-size: 1rem;
+    background: transparent;
+    backdrop-filter: blur(100px);
+
   }
   
   .submit-button {

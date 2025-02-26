@@ -9,7 +9,6 @@
   body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background-color: hsl(0, 0%, 100%);
     color: hsl(240, 10%, 3.9%);
     display: flex;
     justify-content: center;
@@ -17,7 +16,7 @@
     height: 100vh;
     margin: 0;
     overflow-x: hidden;
-    overflow-y: hidden;
+    
   }
   
   /* Animations */
@@ -57,13 +56,16 @@
   /* Sign In Section Styles */
   
   .sign-in-section {
-    background-color: #e6f0ff;
+    background-image: url('/images/yellow.jpg'); /* Replace with any background image URL */
+    background-size: cover;
+    background-position: center;
+    background-color:transparent;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     width: 203vh;
-    background-color: #e6f0ff;
+ 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,12 +82,13 @@
     max-width: 400px;
     width: 100%;
     padding: 2rem;
-    background-color: #fff;
+    background-color:transparent;
     border-radius: 16px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    backdrop-filter: blur(50px);
   }
   
   .title {
@@ -104,6 +107,7 @@
     color: #6b7280;
     animation: textFadeIn 1s ease-in-out forwards;
     animation-delay: 0.4s;
+    background-color: transparent;
   }
   
   .form {
@@ -117,11 +121,13 @@
   .input {
     width: 100%;
     padding: 0.75rem;
-    background-color: #f2f2f2;
+    background-color: transparent;
+    backdrop-filter: blur(100px);
     color: #0a1931;
     border-radius: 8px;
     border: none;
     font-size: 1rem;
+
   }
   
   .submit-button {
