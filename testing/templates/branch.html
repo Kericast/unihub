@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ branch }} Subjects - E-Learning Portal</title>
+    <link rel="stylesheet" href="/testing/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Year {{ year }} - {{ branch }} Subjects</h1>
+            <p>Select a subject to view or download e-books</p>
+            <a href="{{ url_for('year_view', year=year) }}" class="back-btn">← Back to Branches</a>
+        </header>
+        
+        <main>
+            <section class="subjects-section">
+                <div class="subject-cards">
+                    {% for subject in subjects %}
+                    <div class="card">
+                        <h3>{{ subject }}</h3>
+                        <div class="card-actions">
+                            <a href="{{ url_for('display_ebook', year=year, branch=branch, subject=subject) }}" class="btn">View Online</a>
+                            <a href="{{ url_for('download_ebook', year=year, branch=branch, subject=subject) }}" class="btn download-btn">Download</a>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 E-Learning Portal. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
