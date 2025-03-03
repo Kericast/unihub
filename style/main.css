@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   display: grid;
-  background-image: url('/images/yellow.jpg');
+ 
   background-size:cover;
   background-position: center;
   grid-template-columns: repeat(auto-fill, minimax(300px, 1fr));
@@ -21,6 +21,7 @@ body {
   grid-gap: 20px; /* Space between grid items */
   padding: 20px;
   background-repeat: no-repeat;
+  background-image: url(/images/yellow.jpg);
 }
 
 
@@ -335,7 +336,7 @@ body {
   border-color: orange;
   margin-left: auto;
   border-radius: 55px;
-  color: whitesmoke;
+  color: rgb(12, 12, 12);
   cursor: pointer;
   font-size: 1rem;
   transition: background-color 0.3s ease;
@@ -383,8 +384,8 @@ body {
 }
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
-  color: #000000;
+  background-color: #000000;
+  color: #f7b11b;
 }
 
 /* Show dropdown on hover */
@@ -393,7 +394,7 @@ body {
 }
 
 .dropdown:hover .dropbtn {
-  background-color: black;
+  background-color: #f7b11b;
 }
 
 /*FONTS*/

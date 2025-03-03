@@ -1,14 +1,13 @@
 /* General Styles */
 body {
-    background-color: #f3f4f6; /* Equivalent to bg-gray-100 */
+ background-image: url(/images/yellow.jpg);
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
     margin: 0;
-    overflow-y: hidden;
+  
+
 }
 
 .container1 {
@@ -16,15 +15,19 @@ body {
     margin: 0 auto;
     padding: 24px; /* Equivalent to p-6 */
     flex: 1; 
-    overflow-y: hidden;
+    overflow: scroll;
+    background-image: url(/images/yellow.jpg) ;
+
 }
 
 .container {
+  background-color: transparent;
     width: 100%;
+    
     position: relative;
     margin: 0 auto;
-    top: 60px;
-    background-color: #ffffff; /* White container background */
+    top: 300px;
+    
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
   }
 
@@ -173,13 +176,19 @@ body {
 /* Grid Container Styles */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
     gap: 24px; /* Equivalent to gap-6 */
     width: 100%; /* Make the grid container full-width */
     max-width: 1200px; /* Set a maximum width to prevent overflow */
     margin: 0 auto; /* Center the grid container horizontally */
     padding: 24px; /* Add some padding to maintain some space */
     box-sizing: border-box; /* Include padding in the width calculation */
+    backdrop-filter: blur(50px);
+    display: grid;
+    background-size:cover;
+    background-position: center;
+    grid-template-columns: repeat(auto-fill, minimax(300px, 1fr));
+    grid-gap: 20px; /* Space between grid items */
+    background-repeat: no-repeat;
 }
 
 @media (min-width: 640px) {
