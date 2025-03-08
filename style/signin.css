@@ -9,8 +9,7 @@
   body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background-color: hsl(0, 0%, 100%);
-    color: hsl(240, 10%, 3.9%);
+     color: hsl(240, 10%, 3.9%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,6 +17,7 @@
     margin: 0;
     overflow-x: hidden;
     overflow-y: hidden;
+    background-image: url(/images/background.jpg);
   }
   
   /* Animations */
@@ -42,7 +42,7 @@
     }
   }
   
-  /* Container Styles */
+                                            
   
   .container {
     display: grid;
@@ -54,16 +54,16 @@
     width: 80%;
   }
   
-  /* Sign In Section Styles */
+ 
   
   .sign-in-section {
-    background-color: #e6f0ff;
+    background-image: url(/images/background.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     width: 203vh;
-    background-color: #e6f0ff;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,19 +80,21 @@
     max-width: 400px;
     width: 100%;
     padding: 2rem;
-    background-color: #fff;
+    backdrop-filter: blur(80px);
     border-radius: 16px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.2); 
+   
   }
   
   .title {
     text-align: center;
     font-size: 1.875rem;
     font-weight: bold;
-    color: #0a1931;
+    color: #222831;
     animation: textFadeIn 1s ease-in-out forwards;
     animation-delay: 0.2s;
   }
@@ -127,7 +129,7 @@
   .submit-button {
     width: 100%;
     padding: 0.75rem;
-    background-color: #0a1931;
+    background-color: #00ADB5;
     color: #f2f2f2;
     border-radius: 8px;
     font-size: 1rem;
