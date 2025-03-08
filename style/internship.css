@@ -8,7 +8,8 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
-    overflow-y: hidden;
+    
+    background-image: url(/images/background.jpg);
 }
 
 .container1 {
@@ -16,7 +17,7 @@ body {
     margin: 0 auto;
     padding: 24px; /* Equivalent to p-6 */
     flex: 1; 
-    overflow-y: hidden;
+    
 }
 
 .container {
@@ -26,6 +27,7 @@ body {
     top: 60px;
     background-color: #ffffff; /* White container background */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    background-image: url(/images/background.jpg);
   }
 
 .heading {
