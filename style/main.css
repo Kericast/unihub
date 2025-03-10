@@ -223,9 +223,14 @@ body {
   transform: translateY(-3px); /* Slight lift on hover */
 }
 
+.main-content {
+  min-height: 100vh;
+  margin-bottom: -50px;
+}
+
 /* Footer Styling */
 .footer {
-  background-color: #2b2b2b; /* Darker gray footer background */
+  background-color: #00ADB5; /* Darker gray footer background */
   color: #f7f7f7; /* Light text color */
   padding: 20px;
   text-align: center;
@@ -252,7 +257,7 @@ body {
 
 .footer-copyright {
   font-size: 0.85em;
-  color: #999999; /* Soft gray text */
+  color: #f6f6f6; /* Soft gray text */
 }
 
 .social-links {
