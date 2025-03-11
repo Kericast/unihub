@@ -112,6 +112,7 @@ h1 {
   color: var(--text-light);
   text-align: center;
   padding: 8rem 1rem;
+  margin-top: 100px; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -123,12 +124,15 @@ h1 {
   font-weight: 800;
   margin-bottom: 1rem;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
 }
 
 .hero p {
   font-size: 1.5rem;
   max-width: 800px;
   margin-bottom: 2rem;
+  color: #afadad;
+
 }
 
 .btn {
@@ -425,7 +429,7 @@ footer {
 }
 
 .footer-section a {
-  color: #bbb;
+  color: #ebebeb;
   text-decoration: none;
   transition: color 0.3s;
 }
