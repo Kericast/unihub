@@ -399,3 +399,6 @@ body::before {
     }
   }
 
+h1 {
+  color: #000000;
+}
