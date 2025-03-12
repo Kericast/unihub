@@ -1,5 +1,5 @@
 
-# Institutional Forum Page
+# UniHub
 
 This project is a professional platform designed to promote open dialogue and collaboration within an institution. It features user-friendly navigation, categorized discussions, and a secure, inclusive environment for members to share ideas and insights.
 
